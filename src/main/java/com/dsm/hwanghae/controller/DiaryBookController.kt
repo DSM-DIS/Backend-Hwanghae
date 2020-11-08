@@ -13,6 +13,6 @@ class DiaryBookController(@Autowired val diaryBookService: DiaryBookService) {
     @GetMapping("/user/diary-books")
     fun getDiaryBook(request: HttpServletRequest): DiaryBookResponseForm {
         val userId: String = request.getHeader("userId")
-        return diaryBookService.getDiaryBooks(id = userId)
+        return diaryBookService.getDiaryBooks(id = userId) 
     }
 }
