@@ -9,3 +9,4 @@ public class HwanghaeApplication {
 		SpringApplication.run(HwanghaeApplication.class, args);
 	}
 }
+
