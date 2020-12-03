@@ -19,16 +19,16 @@ class DiaryBookController(@Autowired val diaryBookService: DiaryBookService) {
         return diaryBookService.getDiaryBooks(id = userId)
     }
 
-    @GetMapping("/testtesttest")
-    fun getMapping() : Student {
-        println("들어옴")
-        return Student("2417", "이진혁")
-    }
-
-    @PostMapping("/testtesttest")
-    fun postMapping(student: Student): Student {
-        println("들어옴")
-        student.name = "name change"
-        return student
-    }
+//    @GetMapping("/testtesttest")
+//    fun getMapping() : Student {
+//        println("들어옴")
+//        return Student("2417", "이진혁")
+//    }
+//
+//    @PostMapping("/testtesttest")
+//    fun postMapping(student: Student): Student {
+//        println("들어옴")
+//        student.name = "name change"
+//        return student
+//    }
 }
