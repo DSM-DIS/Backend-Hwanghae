@@ -21,7 +21,7 @@ class DiaryBookController(@Autowired val diaryBookService: DiaryBookService) {
     @GetMapping("/testtesttest")
     fun getMapping() : Student {
         println("들어옴")
-        Student("2417", "이진혁")
+        return Student("2417", "이진혁")
     }
 
     @PostMapping("/testtesttest")
