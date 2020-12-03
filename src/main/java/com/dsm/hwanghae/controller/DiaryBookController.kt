@@ -18,10 +18,10 @@ class DiaryBookController(@Autowired val diaryBookService: DiaryBookService) {
         return diaryBookService.getDiaryBooks(id = userId)
     }
 
-    @GetMapping("/aaa")
+    @GetMapping("/testtesttest")
     fun getMapping() = Student("2417", "이진혁");
 
-    @PostMapping("/aaa")
+    @PostMapping("/testtesttest")
     fun postMapping(student: Student): Student {
         student.name = "name change"
         return student
