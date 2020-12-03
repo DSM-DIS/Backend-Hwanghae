@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    private DiaryBookService diaryBookService;
-
-    @Autowired
-    public TestController(DiaryBookService diaryBookService) {
-        this.diaryBookService = diaryBookService;
-    }
+//    private DiaryBookService diaryBookService;
+//
+//    @Autowired
+//    public TestController(DiaryBookService diaryBookService) {
+//        this.diaryBookService = diaryBookService;
+//    }
 
     @GetMapping("/testtesttest")
     public Student getMapping() {
