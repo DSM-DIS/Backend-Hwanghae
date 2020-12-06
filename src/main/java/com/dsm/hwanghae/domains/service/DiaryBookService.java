@@ -1,5 +1,6 @@
 package com.dsm.hwanghae.domains.service;
 
+import com.dsm.hwanghae.domains.domain.DiaryBook;
 import com.dsm.hwanghae.utils.form.DiaryBookResponseForm;
 import com.google.gson.GsonBuilder;
 import okhttp3.OkHttpClient;
