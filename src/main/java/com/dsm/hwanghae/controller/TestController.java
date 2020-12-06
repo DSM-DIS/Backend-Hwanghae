@@ -23,7 +23,7 @@ public class TestController {
 
     @PostMapping("/testtesttest")
     public Student postMapping(Student student) {
-        System.out.println("들어옴");
+        System.out.println("student : " + student.toString());
         student.setName("name change");
         return student;
     }
