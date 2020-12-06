@@ -27,11 +27,19 @@ public class DiaryBookController {
         return diaryBookService.getDiaryBooks(userId);
     }
 
+    /**
+     * Test
+     * @return Test Student Object
+     */
     @GetMapping("/testtesttest")
     public Student getMapping() {
         return new Student("2417", "이진혁");
     }
 
+    /**
+     * Test
+     * @return Test Name Changed Student Object
+     */
     @PostMapping("/testtesttest")
     public Student postMapping(@RequestBody Student student) {
         student.setName("change name");
