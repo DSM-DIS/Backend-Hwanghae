@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 import javax.servlet.http.HttpServletRequest
 
 @RestController
-class DiaryBookController(@Autowired val diaryBookService: DiaryBookService) {
+class DiaryBookController(private val diaryBookService: DiaryBookService) {
 
     @GetMapping("/user/diary-books")
     fun getDiaryBook(request: HttpServletRequest): DiaryBookResponseForm {
