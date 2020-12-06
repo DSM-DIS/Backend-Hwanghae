@@ -16,16 +16,16 @@ public class TestController {
 //        this.diaryBookService = diaryBookService;
 //    }
 
-    @GetMapping("/testtesttest")
-    public Student getMapping() {
-        System.out.println("들어옴");
-        return new Student("2417", "이진혁");
-    }
-
-    @PostMapping("/testtesttest")
-    public Student postMapping(@RequestBody Student student) {
-        System.out.println("student : " + student.toString());
-        student.setName("name change");
-        return student;
-    }
+//    @GetMapping("/testtesttest")
+//    public Student getMapping() {
+//        System.out.println("들어옴");
+//        return new Student("2417", "이진혁");
+//    }
+//
+//    @PostMapping("/testtesttest")
+//    public Student postMapping(@RequestBody Student student) {
+//        System.out.println("student : " + student.toString());
+//        student.setName("name change");
+//        return student;
+//    }
 }

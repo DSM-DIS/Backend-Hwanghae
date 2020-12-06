@@ -6,6 +6,7 @@ import com.dsm.hwanghae.utils.form.DiaryBookResponseForm
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 import javax.servlet.http.HttpServletRequest
 
@@ -19,16 +20,16 @@ class DiaryBookController(@Autowired val diaryBookService: DiaryBookService) {
         return diaryBookService.getDiaryBooks(id = userId)
     }
 
-//    @GetMapping("/testtesttest")
-//    fun getMapping() : Student {
-//        println("들어옴")
-//        return Student("2417", "이진혁")
-//    }
-//
-//    @PostMapping("/testtesttest")
-//    fun postMapping(student: Student): Student {
-//        println("들어옴")
-//        student.name = "name change"
-//        return student
-//    }
+    @GetMapping("/testtesttest")
+    fun getMapping() : Student {
+        println("들어옴")
+        return Student("2417", "이진혁")
+    }
+
+    @PostMapping("/testtesttest")
+    fun postMapping(@RequestBody student: Student): Student {
+        println("들어옴")
+        student.name = "name change"
+        return student
+    }
 }
