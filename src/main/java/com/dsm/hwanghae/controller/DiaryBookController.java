@@ -24,6 +24,7 @@ public class DiaryBookController {
     @GetMapping("/user/diary-books")
     public DiaryBookResponseForm getDiaryBook(HttpServletRequest request) {
         String userId = request.getHeader("userId");
+        System.out.println("<Hwanghae> userId : " + userId);
         return diaryBookService.getDiaryBooks(userId);
     }
 
