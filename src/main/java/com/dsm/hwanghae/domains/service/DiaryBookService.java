@@ -1,6 +1,5 @@
 package com.dsm.hwanghae.domains.service;
 
-import com.dsm.hwanghae.domains.domain.DiaryBook;
 import com.dsm.hwanghae.utils.form.DiaryBookResponseForm;
 import com.google.gson.GsonBuilder;
 import okhttp3.OkHttpClient;
@@ -15,7 +14,7 @@ import java.io.IOException;
 @Service
 public class DiaryBookService {
 
-    public DiaryBookResponseForm getDiaryBooks(String id) {
+    public DiaryBookResponseForm getDiaryBooks(String userId) {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://gyeongsang:8893")
@@ -28,7 +27,7 @@ public class DiaryBookService {
 
         Response<DiaryBookResponseForm> response = null;
         try {
-            response = service.addRequest(id).execute();
+            response = service.addRequest(userId).execute();
         } catch(IOException e) {
             e.printStackTrace();
         }

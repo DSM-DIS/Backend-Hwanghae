@@ -9,5 +9,5 @@ import retrofit2.http.Headers;
 public interface DiaryBookRequestConnectionService {
     @Headers(value = {"accept: application/json", "content-type: application/json"})
     @GET("/repositories/diary-book")
-    Call<DiaryBookResponseForm> addRequest(@Header("id") String id);
+    Call<DiaryBookResponseForm> addRequest(@Header("userId") String userId);
 }
