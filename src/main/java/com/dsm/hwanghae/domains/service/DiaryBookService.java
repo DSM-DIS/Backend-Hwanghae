@@ -28,7 +28,7 @@ public class DiaryBookService {
         Response<DiaryBookResponseForm> response = null;
         try {
             response = service.addRequest(userId).execute();
-            System.out.println("first value : " + response.body());
+            System.out.println("name : " + response.body().getDiaryBooks().get(0).getName());
         } catch(IOException e) {
             e.printStackTrace();
         }
